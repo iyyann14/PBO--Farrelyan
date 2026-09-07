@@ -25,13 +25,17 @@ public class Anggota09 {
 
     public void pinjam(int nominal) {
         if ((this.jumlahPinjaman + nominal) > this.limitPinjaman) {
-            System.out.println("Maaf, jumlah pinjaman melebihi limit");
+            System.out.println("Maaf, Jumlah Pinjaman Melebihi Limit");
         } else {
             this.jumlahPinjaman += nominal;
         }
     }
 
     public void angsur(int nominal) {
-        this.jumlahPinjaman -= nominal;
+        if (nominal < (this.jumlahPinjaman * 0.1)) {
+            System.out.println("Maaf, Angsuran Harus 10% Dari Jumlah Pinjaman");
+        } else {
+            this.jumlahPinjaman -= nominal;
+        }
     }
 }
