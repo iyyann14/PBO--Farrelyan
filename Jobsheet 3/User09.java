@@ -2,13 +2,13 @@ public class User09 {
     public String username;
     public String email;
     public String password;
-    public String name;
+    public String nama;
 
     public void displayInfo() {
         System.out.println("Username    : " + username);
         System.out.println("Email       : " + email);
         System.out.println("Password    : " + password);
-        System.out.println("Name        : " + name);
+        System.out.println("Name        : " + nama);
     }
 
     public User09(String username, String email) {
