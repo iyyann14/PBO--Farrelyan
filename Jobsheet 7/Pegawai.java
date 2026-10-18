@@ -7,7 +7,7 @@ public class Pegawai {
         System.out.println("Ini adalah constructor dari class Pegawai");
     }
 
-    public final String getInfo() {
+    public String getInfo() {
         String info = "";
         info += "NIP    : " + this.nip + "\n";
         info += "Nama   : " + this.nama + "\n";
