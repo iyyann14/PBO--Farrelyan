@@ -6,10 +6,7 @@ public class Dosen extends Pegawai {
     }
 
     public String getAllInfo() {
-        String info = "";
-        info += "NIP    : " + super.nip + "\n";
-        info += "Nama   : " + super.nama + "\n";
-        info += "Gaji   : " + super.gaji + "\n";
+        String info = getInfo();
         info += "NIDN   : " + this.nidn + "\n";
         return info;
     }
