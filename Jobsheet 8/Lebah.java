@@ -19,4 +19,9 @@ public class Lebah extends Hewan  {
         System.out.println("Memutar sayap hampir 90 derajat");
         System.out.println("Mengepakkan sayap ke belakang");
     }
+
+    public void cetakInfo() {
+        super.cetakInfo();
+        System.out.println("Kasta: " + this.kasta);
+    }
 }
