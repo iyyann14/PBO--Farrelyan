@@ -19,7 +19,7 @@ public class MainTugas {
         System.out.println("Stok       : " + pesanan2.stok);
         System.out.println("Varian Ayam: " + pesanan2.varianAyam);
         pesanan2.masak();
-        System.out.println("Total Harga: Rp " + pesanan2.cetakHarga()); // Memanggil Method Overriding Dikichi
+        System.out.println("Total Harga: Rp " + pesanan2.cetakHarga());
         pesanan2.gorengAyam(pesanan2.varianAyam);
     }
 }
