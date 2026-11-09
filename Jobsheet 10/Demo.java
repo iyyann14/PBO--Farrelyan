@@ -5,7 +5,6 @@ public class Demo {
         
         System.out.println(pegawai1.nip);
         System.out.println(pegawai1.nama);
-        System.out.println(pegawai1.nidn);
-        pegawai1.mengajar();
+        pegawai1.displayInfo();
     }
 }
