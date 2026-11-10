@@ -1,3 +1,3 @@
 public interface Printable {
-    static String getPrintableContent();
+    String getPrintableContent();
 }
