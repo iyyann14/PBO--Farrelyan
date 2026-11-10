@@ -1,7 +1,18 @@
 public class Demo {
     public static void main(String[] args) {
-        Pegawai pegawaiAsli = new Pegawai("12345", "Budi");
+        Dosen dosen1 = new Dosen("19940201", "Widia, S.Kom. M.Kom", "199402");
+        Tenagakependidikan tendik1 = new Tenagakependidikan("19750301", "Aida, A.Md.", "Tenaga Administrasi");
+        train(dosen1);
+        train(tendik1);
+    }
 
-        Dosen dosenPalsu = (Dosen) pegawaiAsli;
+    public static void train(Pegawai pegawai) {
+        pegawai.displayInfo();
+        System.out.println("Mengenalkan lingkungan kampus");
+        System.out.println("Menginfokan SOP/Juknis");
+        
+        if (pegawai instanceof Dosen) {
+            System.out.println("Memberikan pelatihan pedagogik");
+        }
     }
 }
