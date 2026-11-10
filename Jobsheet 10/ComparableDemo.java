@@ -7,5 +7,11 @@ public class ComparableDemo {
         daftarDosen.add(new Dosen("321", "Bella", "0091"));
         daftarDosen.add(new Dosen("123", "Adila", "0081"));
         daftarDosen.add(new Dosen("231", "Petrus", "0071"));
+
+        Collections.sort(daftarDosen);
+
+        for (Dosen dosen : daftarDosen) {
+            dosen.displayInfo();
+        }
     }
 }
