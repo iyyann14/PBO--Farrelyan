@@ -11,8 +11,8 @@ public class NewDemo {
         doc1.fileName = "PBO 2024.docx";
         doc1.content = "Contoh content Pemrograman Berorientasi Objek";
 
-        ArrayList<Printable> printables = new ArrayList<>();
-        printables.add(webpage1);
-        printables.add(doc1);
+        Printer printer1 = new Printer();
+        printer1.cetak(webpage1);
+        printer1.cetak(doc1);
     }
 }
